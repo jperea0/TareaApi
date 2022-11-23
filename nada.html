@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <form class="form" method="post" action="http://localhost:3000/api/contactos/">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+
+            <label for="celular">Celular:</label><br>
+            <input type="number" id="celular" name="celular"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad"><br><br>
+
+            <label for="activo">Activo:</label><br>
+            <input type="number" id="activo" name="activo"><br><br>
+
+            <button id="muestra" type="button">Mandar</button><br><br>
+            <label for="numd">Cantidad de dependientes</label>
+            <input type="number" id="numd" name="numd">
+            <button id="depende" type="button">Dependientes</button><br><br>
+
+
+            <div id="input"></div><br><br>
+
+        </form>
+
+        <form action="http://localhost:3000/api/contactos/" method="get">
+            <button id="obtener" type="button">Registros</button>
+        </form><br>
+
+
+        <form action="http://localhost:3000/api/contactos/" method="get">
+            <input type="number" name="number" id="number">
+            <button id="obtener2" type="button">Listar Registro</button>
+        </form><br>
+
+
+        <form action="http://localhost:3000/api/contactos/" method="delete">
+            <label for="delete">Registro a eliminar</label>
+            <input type="number" id="delete" name="delete">
+            <button id="borrar" type="button">Eliminar</button>
+        </form>
+
+    </div>
+    <script src="nada/appNada.js"></script>
+</body>
+
+</html>
